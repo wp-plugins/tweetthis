@@ -21,8 +21,8 @@ Your *readers* sharing it!  Not only does word of mouth vastly increase your
 market reach, but your authority and the power of your message explodes 
 exponentially.
 
-
-The problem is the standard "share" methods are impersonal 
+= Getting Readers Active =
+But there's a problem.  The standard "share" methods are impersonal 
 and difficult for your readers.  Those share buttons at the bottom of your page?
 They don't send anything inspiring!  Just a lifeless message and ugly link.
 What you need is Tweet This!
