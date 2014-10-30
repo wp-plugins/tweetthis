@@ -4,7 +4,7 @@ Donate link: http://tweetthis.jtmorris.net/
 Tags: twitter, tweet, social, sharing
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,7 @@ What you need is Tweet This!
 
 Tweet This is the perfect tool for encouraging your readers to share.  You get to
 write a short message.  This message gets embedded into your post or page in an
-attractive manner.  When a reader clicks on the message, they are given an
+attractive manner.  When a reader clicks your embedded content, they are given an
 opportunity to send the message as a tweet along with a link back to your post.
 
 All you have to do is pick your most engaging quotes or content, load them into a
@@ -40,11 +40,12 @@ Tweet This box, and watch your readers spread it to the far corners of the globe
 
 = How Does It Work? =
 Tweet This works using shortcodes.  Simply use the shortcode to embed your text
-anywhere you like.  When viewed, the shortcode displays a beautiful box containing
-your message as well as subtle encouragement for your readers to tweet it.
+anywhere you like.  When viewed, the shortcode displays either a beautiful box containing
+your message, as well as subtle encouragement for your readers to tweet it, or a simple
+inline link.  It's your choice how to display it.
 
-When they decide to tweet it, the message will automatically be filled in for them as
-well as a link back to your content and your Twitter account if so desired.
+When they decide to tweet it and click the box/link, the message will automatically be filled into
+ a Twitter post box for them, as well as a link back to your content and your Twitter account if so desired.
 
 Check out the [screenshots](./screenshots) to get a better idea of how it works!
 
@@ -87,6 +88,8 @@ Tweet This plugin.
 
 
 == Changelog ==
+= 1.1.1 =
+* Restored missing setting "Remove Byline"
 = 1.1.0 =
 * Added new inline link capability.
 * New shortcode creator dialog box options.
