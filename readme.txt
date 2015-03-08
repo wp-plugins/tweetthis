@@ -4,7 +4,7 @@ Donate link: http://tweetthis.jtmorris.net/
 Tags: twitter, tweet, social, sharing
 Requires at least: 3.9
 Tested up to: 4.1
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,7 +57,7 @@ This boxes.  Setup the use of shortlinks in place of long URLs.  And much more!
 == Installation ==
 = Using WordPress.org's Plugin Repository (recommended) =
 1. Search for "Tweet This" in your WordPress "Add New" plugin section of your dashboard.
-1. Install and activate the "[Tweet This](http://wordpress.org/plugins/tweet-this/)" plugin by John Morris.
+1. Install and activate the "[Tweet This](http://wordpress.org/plugins/tweetthis/)" plugin by John Morris.
 
 
 = Manually =
@@ -88,6 +88,8 @@ Tweet This plugin.
 
 
 == Changelog ==
+= 1.1.9 =
+* Fix SSL/HTTPS security errors due to unsecure font imports.
 = 1.1.8 =
 * Add requested feature: hidden hashtags. Now you can specify hashtags that will be appended to your tweet when tweeted, but do not show to the user.  Just like the Twitter handles and URL, but with hashtags.
 * Improve the behavior of the "remove _____" checkboxes. Before, they only affected the preview in the shortcode creation dialog box.  Now, they affect the tweet users will send.  This behavior is far more logical and useful.  It will not be applied retroactively.  It will only work on new Tweet This shortcodes.
