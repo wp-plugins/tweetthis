@@ -62,7 +62,7 @@ if ( !class_exists( 'TT_Share_Handler' ) ) {
 				$this->my_hidden_hashtags = '';
 			}
 
-			if( $remove_custom_hidden_urls ) {
+			if( $remove_hidden_urls ) {
 				$this->my_hidden_urls = '';
 			}
 		}
@@ -255,7 +255,7 @@ if ( !class_exists( 'TT_Share_Handler' ) ) {
 				}
 			}
 			if( is_null( $this->my_url ) ) {
-				//	Yes, we need ot generate a URL
+				//	Yes, we need to generate a URL
 
 				//	Okay then, do we need to construct a shortlink
 
