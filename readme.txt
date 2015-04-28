@@ -4,7 +4,7 @@ Donate link: http://tweetthis.jtmorris.net/
 Tags: twitter, tweet, social, sharing
 Requires at least: 3.9
 Tested up to: 4.2.1
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,6 +104,8 @@ get graphical content included.  There is a detailed guide for how to do this on
 
 
 == Changelog ==
+= 1.3.1 =
+* Fix jQuery dialog loading behind overlay (https://wordpress.org/support/topic/plugin-not-workinggrey-page).
 = 1.3.0 =
 * Massive shortcode creator dialog box retooling. Removed the intermittently problematic dependence on TinyMCE's window manager.
 * Fixed broken removal of "hidden URLs" on a per-shortcode basis.
