@@ -47,10 +47,12 @@ if ( !class_exists( 'TT_Setup' ) ) {
 				wp_enqueue_style( 'tt-admin-css' );
 				wp_enqueue_style( 'tt-shortcode-creator-css' );
 
+
+				//	jQuery UI theme.
 				wp_enqueue_style('tt-admin-jquery-ui-css',
-                	TT_ROOT_URL . 'assets/css/jquery/cupertino-theme/jquery-ui.min.css',
-                	false
-               	 );
+	               	TT_ROOT_URL . 'assets/css/jquery/cupertino-theme/jquery-ui.min.css',
+	               	false
+	            );
 			}
 			public static function enqueue_helper_public_css() {
 				$options = get_option( 'tt_plugin_options' );
@@ -124,7 +126,7 @@ if ( !class_exists( 'TT_Setup' ) ) {
 
 			//	Shortcode Creator Button
 			$current_options = get_option( 'tt_plugin_options' );
-			array_key_exists( 'button_location', $current_options ) ? $bl = $current_options['button_location'] : $bl = 'row1';
+			is_array( $current_options ) && array_key_exists( 'button_location', $current_options ) ? $bl = $current_options['button_location'] : $bl = 'row1';
 			
 			if( $bl == 'media' ) {	//	Media Button Row
 				add_action( 'media_buttons', 
@@ -182,12 +184,13 @@ if ( !class_exists( 'TT_Setup' ) ) {
 
 
 							<?php // Turn the dialog box code included above into a jQuery dialog ?>						
-							jQuery('#TT-shortcode-creator-dialog').dialog({
+							var scDialog = jQuery('#TT-shortcode-creator-dialog').dialog({
 								autoOpen: false,
 								modal: true,
 								height: 600,
 								width: 650
 							});
+							scDialog.parent('.ui-dialog').addClass( 'tt-jqui' );	//	jQuery UI Theme Scope
 
 							jQuery('#tt-dialog-launcher').click(function(event) {
 								event.preventDefault();
